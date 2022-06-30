@@ -77,4 +77,34 @@ public class Grafo {
     // throw new Exception("No existe pa");
     // return matrizAd[va][vb] == 1;
 
+    //Mostrar matriz(─‿‿─)
+    public void mostrarMatriz() {
+      if (verts[0] != null)       
+        {
+				//imprime el header de la matriz (─‿‿─)
+				  for(int i = 0; i < numVerts; i++){
+	        if(i == 0){
+          System.out.println("La matriz esta vacia");
+	      	System.out.print("   | " + verts[i].nomVertice() + " | " );          
+	        } else {
+	      	System.out.print(" | " + verts[i].nomVertice() + " | " );          
+	        }
+	      }
+	      System.out.println("");
+				
+				//imprime la matriz
+	      for(int i = 0; i < numVerts; i++){
+	        System.out.print(verts[i].nomVertice());
+	        for(int j = 0; j < numVerts; j++){
+	          System.out.print(" | " +matrizAd[i][j]+" | ");
+	          //Si van a poner varias cosas no se olviden el +. Tiene que poner el valor de la matriz (─‿‿─)
+	        }        
+					System.out.println("");
+	      }
+			}else {
+				 System.out.println("La matriz no tiene nodo");
+			}
+			
+    }
+
 }
