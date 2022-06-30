@@ -21,8 +21,9 @@ public class ComponentesFuertes{
         grafoInverso(ga, gaInverso, n);
         Vertice [] vs = new Vertice[n];
         vs = ga.vertices();
-        for (i = 0; i < n; i++)
-        bosque[i] = 0;
+        for (i = 0; i < n; i++){
+            bosque[i] = 0;
+        }
         v = 0; // vértice de partida
         do {
             m = RecorreGrafo.recorrerProf(ga, vs[v].nomVertice());
