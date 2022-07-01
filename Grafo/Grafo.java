@@ -98,10 +98,8 @@ public class Grafo {
 	        }        
 					System.out.println("");
 	      }
-			}else {
-				 System.out.println("La matriz no tiene nodo");
-			}
-			
-    }
-
+		}else {
+			System.out.println("La matriz no tiene nodo");
+		}		
+  }
 }
